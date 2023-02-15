@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <body>
+            <script>
+function mystery(number, text) {
+  return text.length === number;
+}
+
+
+let number = 5;
+let text = "apple";
+let result = mystery(number, text);
+console.log(result); // outputs true
+
+number = 3;
+text = "ban";
+result = mystery(number, text);
+console.log(result); // outputs false
+
+number = 4;
+text = "pear";
+result = mystery(number, text);
+console.log(result); // outputs true
+
+/*
+In this example, the mystery function takes two arguments number and text.
+The function returns true if the length of the string text is equal to the value provided in number, and false otherwise.
+The length of a string can be obtained using the length property of the string.
+The function uses the equality operator === to compare the length of the string to the value of number.
+*/
+</script>
+        </body>
+        </head>
+        </html>

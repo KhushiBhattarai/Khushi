@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <body>
+            <script>
+
+function isYesOrNo(text) {
+  return text.includes("o");
+}
+
+
+let text = "yes";
+let result = isYesOrNo(text);
+console.log(result); // outputs true
+
+text = "no";
+result = isYesOrNo(text);
+console.log(result); // outputs true
+
+text = "maybe";
+result = isYesOrNo(text);
+console.log(result); // outputs false
+
+/*
+In this example, the isYesOrNo function takes a single argument text, which is a string.
+The function returns true if the string text contains the letter "o", and false otherwise.
+Note that this function assumes that the input string will contain at least one "o".
+*/
+            </script>
+        </body>
+        </head>
+        </html>

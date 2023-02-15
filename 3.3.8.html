@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <body>
+            <script>
+
+function oddNotSmall(number) {
+  return number % 2 !== 0 && number >= 100;
+}
+
+
+let number = 101;
+let result = oddNotSmall(number);
+console.log(result); // outputs true
+
+number = 98;
+result = oddNotSmall(number);
+console.log(result); // outputs false
+
+number = 199;
+result = oddNotSmall(number);
+console.log(result); // outputs true
+
+/*
+In this example, the oddNotSmall function takes a single argument number, which is a number.
+The function returns true if the number is odd and greater than or equal to 100, and false otherwise.
+The function uses the modulo operator % to check if the number is odd 
+(i.e., if the remainder when dividing the number by 2 is not 0), and 
+then uses a comparison operator to check if the number is greater than or equal to 100.
+*/
+            </script>
+        </body>
+        </head>
+        </html>

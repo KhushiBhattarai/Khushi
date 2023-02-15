@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <body>
+            <script>
+
+                function isShortPhoneNumber(phoneNumber) {
+                    return phoneNumber.length < 7 || phoneNumber.length > 10;
+                }
+
+                let phoneNumber = "1234567";
+                let result = isShortPhoneNumber(phoneNumber);
+                document.write(result,"<br>"); // outputs false
+                phoneNumber = "123456";
+                result = isShortPhoneNumber(phoneNumber);
+                document.write(result); // outputs true
+
+/*
+In this example, the isShortPhoneNumber function takes a single argument phoneNumber, 
+which is a string representation of a phone number.
+The function returns true if the length of phoneNumber is less than 7 or greater than 10, and false otherwise.
+*/
+            </script>
+        </body>
+    </head>
+</html>
